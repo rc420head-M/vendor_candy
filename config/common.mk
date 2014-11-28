@@ -197,6 +197,10 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/candy/prebuilt/common/superuser.zip:system/addon.d/superuser.zip
+
 # Versioning System
 # Candy version.
 PRODUCT_VERSION_MAJOR = 7
