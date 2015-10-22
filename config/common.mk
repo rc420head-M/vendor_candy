@@ -105,11 +105,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/candy/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
-# Bring in camera effects
-PRODUCT_COPY_FILES +=  \
-    vendor/candy/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/candy/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
-
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
     vendor/candy/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
