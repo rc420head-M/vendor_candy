@@ -137,8 +137,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CANDY packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
-    Basic \
     libemoji \
     Terminal
 
