@@ -252,7 +252,7 @@ ifndef CANDY_BUILDTYPE
 endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CANDY_BUILDTYPE)),)
+ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL OFFICIAL,$(CANDY_BUILDTYPE)),)
     CANDY_BUILDTYPE :=
 endif
 
@@ -281,6 +281,12 @@ else
     # If CANDY_BUILDTYPE is not defined, set to UNOFFICIAL
     CANDY_BUILDTYPE := UNOFFICIAL
     CANDY_EXTRAVERSION :=
+endif
+
+ifeq ($(CANDY_BUILDTYPE), OFFICIAL)
+    ifneq ($(TARGET_OFFICIAL_BUILD_ID),)
+        CANDY_EXTRAVERSION := OFFICIAL
+    endif
 endif
 
 ifeq ($(CANDY_BUILDTYPE), UNOFFICIAL)
