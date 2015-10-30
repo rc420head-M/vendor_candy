@@ -145,16 +145,9 @@ PRODUCT_PACKAGES += \
 # Custom CANDY packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    Trebuchet \
     AudioFX \
-    CMWallpapers \
-    CMFileManager \
     Eleven \
     LockClock \
-    CMUpdater \
-    CMAccount \
-    CMHome \
-    CyanogenSetupWizard \
     CMSettingsProvider
 
 # CANDY Platform Library
@@ -237,8 +230,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/candy/overlay/common
 
-PRODUCT_VERSION_MAJOR = 0
-PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MAJOR = alpha
+PRODUCT_VERSION_MINOR = 0.1
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set CANDY_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
