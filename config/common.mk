@@ -294,11 +294,7 @@ ifeq ($(CANDY_BUILDTYPE), RELEASE)
         endif
     endif
 else
-    ifeq ($(PRODUCT_VERSION_MINOR),0)
-        CANDY_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CANDY_BUILDTYPE)$(CANDY_EXTRAVERSION)-$(CANDY_BUILD)
-    else
         CANDY_VERSION := $(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CANDY_BUILDTYPE)$(CANDY_EXTRAVERSION)-$(CANDY_BUILD)
-    endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
