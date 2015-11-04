@@ -140,12 +140,7 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-    CMWallpapers \
-    CMFileManager \
-    Eleven \
     LockClock \
-    CMUpdater \
-    CMAccount \
     CyanogenSetupWizard \
     CMSettingsProvider
 
