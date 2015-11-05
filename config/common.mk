@@ -142,7 +142,8 @@ PRODUCT_PACKAGES += \
     AudioFX \
     LockClock \
     CyanogenSetupWizard \
-    CMSettingsProvider
+    CMSettingsProvider \
+    ExactCalculator
 
 # CANDY Platform Library
 PRODUCT_PACKAGES += \
