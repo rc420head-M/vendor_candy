@@ -155,6 +155,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
+    
+# Eos Utils Library
+PRODUCT_PACKAGES += \
+     org.teameos.utils
+ 
+PRODUCT_BOOT_JARS += \
+    org.teameos.utils
 
 # Extra tools in CANDY
 PRODUCT_PACKAGES += \
