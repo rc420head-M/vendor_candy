@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX
 
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     LatinIME \
