@@ -178,6 +178,9 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# Themes
+include vendor/candy/config/themes_common.mk
+
 # Versioning System
 PRODUCT_VERSION_MAJOR = 6.0.1
 PRODUCT_VERSION_MINOR = 2.3
