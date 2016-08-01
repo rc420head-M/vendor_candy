@@ -29,6 +29,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Titania.ogg \
     ro.config.notification_sound=Tethys.ogg
 
+# Debuggable by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    persist.sys.usb.config=mtp,adb
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/candy/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
