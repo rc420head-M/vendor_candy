@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
 
 # Candy backuptool
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.candybackuptool.version=c6
+    ro.candybackuptool.version=c7
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
@@ -194,16 +194,6 @@ ifndef CANDY_POSTFIX
 endif
 
 PLATFORM_VERSION_CODENAME := $(CANDY_BUILDTYPE)
-
-# SlimIRC
-# export INCLUDE_CANDYIRC=1 for unofficial builds
-ifneq ($(filter WEEKLY OFFICIAL,$(CANDY_BUILD_TYPE)),)
-    INCLUDE_CANDYIRC = 1
-endif
-
-ifneq ($(INCLUDE_CANDYIRC),)
-    PRODUCT_PACKAGES += CANDYIRC
-endif
 
 # Set all versions
 CANDY_VERSION := CANDY-$(PRODUCT_VERSION_MAINTENANCE)-$(CANDY_BUILDTYPE)$(CANDY_POSTFIX)
