@@ -71,6 +71,12 @@ PRODUCT_COPY_FILES += \
     vendor/candy/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/candy/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Substratum
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.substratum.recreate=true
+PRODUCT_PACKAGES += \
+    Substratum
+
 # Required packages
 PRODUCT_PACKAGES += \
     Development \
